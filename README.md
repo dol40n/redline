@@ -1,6 +1,6 @@
 # REDLINE
 
-Psychological timing game for the browser.
+Psychological timing game for the browser. Please use headphones
 
 Live game: https://dol40n.github.io/redline/
 
