@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#020202">
+    <title>REDLINE</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="app" class="app" data-phase="start" data-level="1" data-rating="none">
+      <div class="vignette" aria-hidden="true"></div>
+      <div class="noise" aria-hidden="true"></div>
+      <div class="scanlines" aria-hidden="true"></div>
+      <div class="glitch-lines" aria-hidden="true"></div>
+      <div id="flash" class="flash" aria-hidden="true"></div>
+      <div id="livesBar" class="lives-bar" aria-label="Lives remaining" aria-live="polite"></div>
+
+      <div id="topText" class="top-text">PRESS START</div>
+      <div id="targetText" class="target-text" aria-live="polite"></div>
+      <div id="calibrationText" class="calibration-text" aria-live="polite" hidden></div>
+
+      <button id="coreButton" class="red-button" aria-label="Press red button">
+        <span class="button-core" aria-hidden="true"></span>
+      </button>
+      <div id="realitySlip" class="reality-slip" aria-hidden="true"></div>
+
+      <section id="resultPanel" class="result-panel" aria-live="polite" hidden>
+        <div id="resultTime" class="result-time">5.00</div>
+        <div id="resultRating" class="result-rating">PERFECT</div>
+        <div id="resultOffset" class="result-offset">+0.000 LATE</div>
+      </section>
+
+      <section id="finalPanel" class="final-panel" aria-live="polite" hidden>
+        <div id="finalSignal" class="final-signal">SYSTEM COULD NOT STABILIZE YOU</div>
+        <div id="recordBanner" class="record-banner" hidden></div>
+        <dl class="stats">
+          <div>
+            <dt>AVERAGE ACCURACY</dt>
+            <dd id="statAverage">0.000</dd>
+          </div>
+          <div>
+            <dt>BEST DELTA</dt>
+            <dd id="statBest">0.000</dd>
+          </div>
+          <div>
+            <dt>TOTAL SYNCHRONIZATION</dt>
+            <dd id="statSync">0%</dd>
+          </div>
+          <div>
+            <dt>REACTION PATTERN</dt>
+            <dd id="statPattern">UNSTABLE</dd>
+          </div>
+        </dl>
+        <div id="rhythmGraph" class="rhythm-graph" aria-label="Reaction rhythm graph"></div>
+        <div id="roundHistory" class="round-history"></div>
+        <button id="menuButton" class="menu-button" type="button">MAIN MENU</button>
+      </section>
+
+      <nav id="modeBar" class="mode-bar" aria-label="Game mode">
+        <button class="mode is-active" type="button" data-mode="normal">NORMAL</button>
+        <button class="mode" type="button" data-mode="hardcore">HARDCORE</button>
+        <button class="mode" type="button" data-mode="do-not-try">DO NOT TRY</button>
+      </nav>
+    </main>
+
+    <script src="game.js" type="module"></script>
+  </body>
+</html>

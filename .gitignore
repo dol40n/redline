@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+*.log
+redline-public.png
+
+.claude/
+.claude-flow/
+.swarm/
+.mcp.json
+CLAUDE.md
