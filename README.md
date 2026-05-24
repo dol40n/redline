@@ -2,6 +2,8 @@
 
 Psychological timing game for the browser.
 
+Live game: https://dol40n.github.io/redline/
+
 ## Run locally
 
 ```bash
